@@ -1,0 +1,261 @@
+@media (max-width: 1180px){
+  .menu{
+    &__list-item:not(:last-child){
+      margin-right: 16px;
+    }
+  }
+  .harm{
+    &__items{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 1130px){
+  .header-top{
+    padding: 28px 0;
+    &__contact{
+      display: flex;
+      flex-direction: column;
+    }
+    &__contact-telephone{
+      margin-left: 0;
+    }
+    &__link{
+      display: inline-block;
+      margin-left: auto;
+    }
+    &__btn{
+      display: flex;
+    }
+  }
+  .header-bottom{
+    background-color: #fff;
+    z-index: 40;
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    right: 0;
+    top: 101px;
+    transform: translateY(-200%);
+    transition: all .6s;
+    &--active{
+      transform: translateY(0px);
+    }
+    .menu{
+      width: 100%;
+      &__list{
+        flex-direction: column;
+      }
+      &__list-item:not(:last-child) {
+        margin-right: 0px;
+      }
+      &__list-item{
+        width: 100%;
+      }
+      &__list-link{
+        width: 100%;
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+      }
+      &__list-btn{
+        display: block;
+        margin: 0 auto;
+        padding: 10px;
+      }
+    }
+    &__links{
+      flex-direction: column;
+    }
+    &__link{
+      margin-top: 10px;
+    }
+  }
+  .banner{
+    &__content-title{
+      font-size: 34px;
+    }
+  }
+}
+
+
+@media (max-width: 990px){
+  .header-top{
+    &__logo-text{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 960px){
+  .banner{
+    &__content-title{
+      font-size: 24px;
+    }
+  }
+}
+@media (max-width: 860px){
+  .harm{
+    background-color: transparent;
+    &__title{
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+    &__items{
+      background-color: #F4F3F3;
+    }
+    &__elements{
+      margin: 56px 0;
+    }
+    &__element-title{
+      font-size: 24px;
+    }
+    &__element-text{
+      font-size: 16px;
+    }
+  }
+  .banner{
+    border-radius: 5px;
+    margin: 0 15px;
+    &__content{
+      display: none;
+    }
+    &__content2{
+      display: block;
+      flex: 1 1 63%;
+      padding: 44px 0;
+    }
+  }
+}
+@media (max-width: 768px){
+  .banner{
+    &__people{
+      flex: 1 1 43%;
+    }
+    &__people-img{
+      padding-left: 10px;
+    }
+    &__people-info{
+      margin-bottom: 15px;
+    }
+    &__content2{
+      flex: 1 1 57%;
+    }
+  }
+}
+
+@media (max-width: 710px){
+  .harm{
+    &__elements{
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 40px 0;
+      & > *:not(:last-child){
+        margin-bottom: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 680px){
+  .header-top{
+    &__logo{
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 5px;
+    }
+    &__telephone{
+      display: inline-block;
+      margin-top: 7px;
+      font-size: 14px;
+    }
+    &__contact{
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 650px){
+  .banner{
+    &__wrapper{
+      flex-direction: column;
+    }
+    &__content2{
+      display: none;
+    }
+    &__content{
+      display: block;
+      background-color: #F4F3F3;
+      margin: 0 -15px;
+      padding: 16px 15px;
+    }
+    &__people,
+    &__content{
+      flex: 1 1 100%;
+    }
+    &__content-title{
+      color: #000;
+    }
+    &__form-label,
+    &__form-link{
+      color: #999999;
+    }
+  }
+}
+
+@media (max-width: 580px){
+  .banner{
+    &__form-box{
+      flex-direction: column;
+    }
+    &__form-input{
+      max-width: 100%;
+    }
+  }
+  .harm{
+    &__title{
+      font-size: 24px;
+    }
+    &__items{
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+@media (max-width: 460px){
+  .header-bottom{
+    top: 95px;
+  }
+}
+@media (max-width: 420px){
+  .banner{
+    &__people-img{
+      padding-left: 0;
+      margin-left: -20px;
+    }
+    &__people-info{
+      padding-right: 0px;
+      right: 0;
+      max-width: 100px;
+      text-align: end;
+      margin-bottom: 0;
+      bottom: 0;
+      top: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    &__people-infoName{
+      span{
+        display: none;
+      }
+    }
+    &__people-infoPosition{
+      font-size: 14px;
+    }
+    &__form-input{
+      padding: 16px 8px;
+      font-weight: 400;
+    }
+  }
+}
